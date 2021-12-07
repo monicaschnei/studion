@@ -5,9 +5,10 @@
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "npx live-server src/"
+    "start" : "npx live-server src/",
+    "stop": "pkill --signal SIGINT myApp"
   },
-  
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/monicaschnei/studion.git"

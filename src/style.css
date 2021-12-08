@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
+}
+
+body{
+    margin: 0;
+    padding-top:7.75rem;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items:center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+    background-color: #000;
+    color: #ffffff;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.navbar__links{
+    justify-self: end;
+}
+
+.navbar__links li{
+    font-size: 0.875rem; /*14px/16*/
+    margin-right: 3rem; /*=48px/16*/
+    text-transform: uppercase;
+
+}
+
+
+.navbar__links a{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar__links a:hover{
+    color: var(--color-primary);
+}
+
+.logo-studion{
+    font-weight: 900;
+    font-size: 2.375rem; /*38/16*/
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1ch; /*1ch = relativo ao tamanho da altura do gripo zero da fonte*/
+}
+
+.logo-studion__subtitle{
+    font-size: 0.875rem /*14px/16*/;
+    font-weight: 300;
+    float: right;
+}
+
+.copy--primary{
+    color: var(--color-primary);
+}
+
+#slider{
+    background-color: #000;
+    color: #fff;
+}
+
+#slider h6{
+    margin: 0;
+}
+
+.slide{
+    position: relative; /*isso faz com que o filho (slide__copy) fique preso dentro do pai*/
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute;
+    top:0;
+    left: 40.25rem;
+}
+
+.slide__copy h6{
+    font-size: 0.9375rem /*15px/16*/;
+    font-weight: 400;
+    letter-spacing: 0.1875rem /*3/16*/;
+    text-transform: uppercase;
+}
+
+.slide__copy h2{
+    font-size: 6.25rem /*100px/16*/;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+    
+}
+
+.slide__copy h2 span{
+    display: block;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: 0.125rem solid #ffff;
+    color: var(--color-primary);
+    background: unset;
+    border-radius: 5rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}

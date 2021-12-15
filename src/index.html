@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <nav class="navbar"> <!-- Por que esse nav não está dentro do header? -->
-        <h1 class="logo-studion">
-            Studi<span class="copy--primary">on</span>
-            <span class="logo-studion__subtitle">Eventos</span>
-        </h1> <!-- Por que esse h1 está dentro do nav? -->
-        <ul class="navbar__links">
-            <li><a href="#">Empresa</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#">Depoimentos</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
-    </nav>
+    <nav  class="navbar">
+        <div  class="container navbar--container"> <!-- Por que esse nav não está dentro do header? -->
+            <h1 class="logo-studion">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo-studion__subtitle">Eventos</span>
+            </h1> <!-- Por que esse h1 está dentro do nav? -->
+            <ul class="navbar__links">
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>  
     <header>
         <div id="slider">
             <div class="slide">
@@ -39,23 +41,22 @@
         </div>
     </header>
     
-
     <main>
-        <section id="eventos"> 
+        <section id="counter"> 
             <!-- Por que aqui não tem uma div? -->
-            <ul>
-                <li><h3>+ de 500</h3>Eventos realizados</li>
-                <li><h3>+ de 1000000</h3>Ingressos vendidos</li>
-                <li><h3>+ de 300</h3>Empresas atendidas</li>
+            <ul class="container counter__container">
+                <li><h3>+ de 500 <small>Eventos realizados</small></h3></li>
+                <li><h3>+ de 1000000 <small>Ingressos vendidos</small></h3></li>
+                <li><h3>+ de 300 <small>Empresas atendidas</small></h3></li>
             </ul>
         </section>
-        <section id="galeria">
-            <div>
-                <img src="./images/institutional.jpg"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
+        <section id="galeria" class="container institucional">
+            <img class="institucional__image" src="./images/institutional.jpg" alt="Studion institucional"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
+            <div class="institucional__copy">
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis exercitationem, et fugit dicta, rerum itaque velit ullam fugiat animi provident reprehenderit perspiciatis nobis quibusdam molestiae natus totam ipsa voluptates inventore!</p>
-                <button>Saiba Mais</button>
+                <button class="btn btn--institucional">Saiba Mais</button>
             </div>
         </section>
         <section class="conteudo2">

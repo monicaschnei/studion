@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>Studion</title>
 </head>
 
@@ -17,23 +19,45 @@
                 <span class="logo-studion__subtitle">Eventos</span>
             </h1> <!-- Por que esse h1 está dentro do nav? -->
             <ul class="navbar__links">
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="enterprise.html">Empresa</a></li>
+                <li><a href="events.html">Eventos</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="testimonials.html">Depoimentos</a></li>
+                <li><a href="contact.html">Contatos</a></li>
             </ul>
         </div>
     </nav>  
     <header>
-        <div id="slider">
+        <div class="slider">
             <div class="slide">
-                <img class="slide__background-image" src="./images/banner.jpg" 
-                alt="Banner Studion">
+                <img class="slide__background-image" src="./src/images/banner.jpg" 
+                alt="Banner Studion"/>
                 <div class="slide__copy">
                     <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
                     <h2><span class="copy--primary">Creative</span> 
                     Minds
+                </h2>
+                    <button class="btn btn--slide">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slide__background-image" src="./src/images/banner2.jpg" 
+                alt="Banner Studion"/>
+                <div class="slide__copy">
+                    <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
+                    <h2><span class="copy--primary">FEST</span> 
+                   FOWARD
+                </h2>
+                    <button class="btn btn--slide">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slide__background-image" src="./src/images/banner3.jpg" 
+                alt="Banner Studion"/>
+                <div class="slide__copy">
+                    <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
+                    <h2><span class="copy--primary">SHOW</span> 
+                    EVENT
                 </h2>
                     <button class="btn btn--slide">Saiba Mais</button>
                 </div>
@@ -45,13 +69,13 @@
         <section id="counter"> 
             <!-- Por que aqui não tem uma div? -->
             <ul class="container counter__container">
-                <li><h3>+ de 500 <small>Eventos realizados</small></h3></li>
-                <li><h3>+ de 1000000 <small>Ingressos vendidos</small></h3></li>
-                <li><h3>+ de 300 <small>Empresas atendidas</small></h3></li>
+                <li><h3>+ de <span class="counter__number">500</span>  <small>Eventos realizados</small></h3></li>
+                <li><h3>+ de <span class="counter__number">1000000</span>  <small>Ingressos vendidos</small></h3></li>
+                <li><h3>+ de  <span class="counter__number"> 300</span> <small>Empresas atendidas</small></h3></li>
             </ul>
         </section>
         <section id="galeria" class="container institucional">
-            <img class="institucional__image" src="./images/institutional.jpg" alt="Studion institucional"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
+            <img class="institucional__image" src="./src/images/institutional.jpg" alt="Studion institucional"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
             <div class="institucional__copy">
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -78,7 +102,7 @@
                 <label for="email">Receba news e promoções</label>
                 <div class="footer__email">
                     <input id="email" type="email" placeholder="email"/>
-                    <button type="submit">
+                    <button class="footer__form-button" type="submit">
                         <i class="fas fa-paper-plane fa-2x"></i>
                     </button>
                 </div>
@@ -108,6 +132,16 @@
             <hr/>
             <p><small>Studi<span class="copy--primary">on</span> - Todos os direitos reservados</small></p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./src/script.js"></script>
+  
+  
 </body>
 
 </html>

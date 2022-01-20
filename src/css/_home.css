@@ -1,0 +1,178 @@
+
+.slider{
+    background-color: #000;
+    color: #fff;
+}
+
+.slider__prev-arrow,
+.slider__next-arrow{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 5px solid #fff;
+    border-right: unset;
+    border-bottom: unset;
+    opacity: 0.9;
+}
+
+.slider__prev-arrow{
+    left: 1rem;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.slider__next-arrow{
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.slider__prev-arrow::before,
+.slider__next-arrow::before{
+    content: "";
+}
+
+.slider h6{
+    margin: 0;
+}
+
+.slide{
+    position: relative; /*isso faz com que o filho (slide__copy) fique preso dentro do pai*/
+    height: 90vh;
+}
+
+.slide__background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute;
+    top:10rem;
+    left: 40.25rem;
+}
+
+.slide__copy h6{
+    font-size: 0.9375rem /*15px/16*/;
+    font-weight: 400;
+    letter-spacing: 0.1875rem /*3/16*/;
+    text-transform: uppercase;
+}
+
+.slide__copy h2{
+    font-size: 6.25rem /*100px/16*/;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+    margin: 0;
+    
+}
+
+.slide__copy h2 span{
+    display: block;
+}
+
+#counter{
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.counter__container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    padding: 4.375rem 1rem;
+}
+
+.counter__container h3{
+    font-size: 2.1875rem;
+}
+
+.counter__container h3 small{
+    font-size: 1.25rem;
+    display: block;
+}
+
+.institucional{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 3.125rem;
+    padding: 4.375rem;
+}
+
+.institucional__image{
+    max-width: 550px;
+}
+
+.institucional__copy{
+    padding:0 1.875rem;
+}
+
+.institucional__copy h6{
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institucional__copy h4{
+    font-size: 1.5625rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.institucional p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+
+.quote{
+    
+    background-image: url(../images/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy{
+    background-color: #fff;
+    padding:5.625rem 4.375rem;
+    margin: 7.5rem 0;
+
+}
+
+.quote__copy h6{
+    font-weight: 400;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.quote__copy h2{
+    font-size: 5rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1875;
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 span{
+    display: block;
+}

@@ -7,17 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Studion</title>
 </head>
 
 <body>
+
+    <!-- <nav class="navbar navbar-expand-lg  bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fonte__titulo2" href="#">Fruta & Fruto</a>
+          <button class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Receitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
     <nav  class="navbar">
-        <div  class="container navbar--container"> <!-- Por que esse nav não está dentro do header? -->
+        <div  class="container navbar--container"> 
             <h1 class="logo-studion">
                 Studi<span class="copy--primary">on</span>
                 <span class="logo-studion__subtitle">Eventos</span>
-            </h1> <!-- Por que esse h1 está dentro do nav? -->
+            </h1>
             <ul class="navbar__links">
                 <li><a href="enterprise.html">Empresa</a></li>
                 <li><a href="events.html">Eventos</a></li>
@@ -30,7 +58,7 @@
     <header>
         <div class="slider">
             <div class="slide">
-                <img class="slide__background-image" src="./src/images/banner.jpg" 
+                <img class="slide__background-image" src="./images/banner.jpg" 
                 alt="Banner Studion"/>
                 <div class="slide__copy">
                     <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
@@ -41,7 +69,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img class="slide__background-image" src="./src/images/banner2.jpg" 
+                <img class="slide__background-image" src="./images/banner2.jpg" 
                 alt="Banner Studion"/>
                 <div class="slide__copy">
                     <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
@@ -52,7 +80,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img class="slide__background-image" src="./src/images/banner3.jpg" 
+                <img class="slide__background-image" src="./images/banner3.jpg" 
                 alt="Banner Studion"/>
                 <div class="slide__copy">
                     <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19:00</h6>
@@ -75,7 +103,7 @@
             </ul>
         </section>
         <section id="galeria" class="container institucional">
-            <img class="institucional__image" src="./src/images/institutional.jpg" alt="Studion institucional"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
+            <img class="institucional__image" src="./images/institutional.jpg" alt="Studion institucional"/> <!--essa imagem não deveria ser separada do conteudo por outra div? Para depois conseguir posicionar a imagem e o texto com o flex-->
             <div class="institucional__copy">
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -139,7 +167,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="https://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./src/script.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   
   
 </body>
